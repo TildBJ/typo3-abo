@@ -1,0 +1,9 @@
+Satisfy any
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_URI} !icon.svg$$
+	RewriteCond %{REQUEST_URI} !icon.gif$$
+    RewriteRule (.*) - [L,R=403]
+</IfModule>

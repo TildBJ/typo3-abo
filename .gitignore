@@ -1,0 +1,7 @@
+.idea
+.Build
+typo3
+typo3_src
+index.php
+
+composer.phar

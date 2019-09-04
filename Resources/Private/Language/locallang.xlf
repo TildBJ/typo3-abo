@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" product-name="abo">
+		<header/>
+		<body>
+			<trans-unit id="flashmessage.submit">
+				<source>Your abo registration has been sent to us.
+
+Please confirm your registration by clicking on the link in the e-mail that has been automatically sent to you, which allows us to include your e-mail address in our mailing list.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

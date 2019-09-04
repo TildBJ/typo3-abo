@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="content">
+    <f:flashMessages />
+    <f:form action="{action}" class="newsletter-form" objectName="abo">
+        <f:form.textfield type="email" class="form-control" property="email" />
+        <button class="btn btn-secondary" type="submit"><f:translate key="LLL:EXT:submit">[submit]</f:translate></button>
+        <f:link.action action="index" additionalParams="{tx_abo_form: {nextAction: 'unsubscribe'}}">
+            <f:translate key="unsubscribe">[unsubscribe]</f:translate>
+        </f:link.action>
+    </f:form>
+</f:section>
+
+</html>
