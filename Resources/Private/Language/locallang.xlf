@@ -8,6 +8,12 @@
 
 Please confirm your registration by clicking on the link in the e-mail that has been automatically sent to you, which allows us to include your e-mail address in our mailing list.</source>
 			</trans-unit>
+			<trans-unit id="submit">
+				<source>Submit</source>
+			</trans-unit>
+			<trans-unit id="unsubscribe">
+				<source>Unsubscribe</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
