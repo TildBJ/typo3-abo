@@ -4,7 +4,7 @@
 
 <f:section name="content">
     <f:flashMessages />
-    <f:form action="{action}" class="newsletter-form" objectName="abo">
+    <f:form action="{action}" class="newsletter-form" objectName="abo" object="{abo}">
         <f:form.textfield type="email" class="form-control" property="email" />
         <button class="btn btn-secondary" type="submit"><f:translate key="LLL:EXT:submit">[submit]</f:translate></button>
         <f:link.action action="index" additionalParams="{tx_abo_form: {nextAction: 'unsubscribe'}}">
