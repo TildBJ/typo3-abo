@@ -14,6 +14,7 @@ class Abo extends AbstractEntity implements AboInterface
 {
     /**
      * @var string
+     * @validate NotEmpty
      */
     protected $email = '';
 

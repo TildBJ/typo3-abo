@@ -8,11 +8,18 @@
 
 Please confirm your registration by clicking on the link in the e-mail that has been automatically sent to you, which allows us to include your e-mail address in our mailing list.</source>
 			</trans-unit>
+			<trans-unit id="flashmessage.emailNotFound">
+				<source>Email not found</source>
+			</trans-unit>
 			<trans-unit id="submit">
 				<source>Submit</source>
 			</trans-unit>
 			<trans-unit id="unsubscribe">
 				<source>Unsubscribe</source>
+			</trans-unit>
+
+			<trans-unit id="abo.email">
+				<source>Email</source>
 			</trans-unit>
 		</body>
 	</file>

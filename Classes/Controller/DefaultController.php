@@ -7,7 +7,6 @@ use TildBJ\Abo\Domain\Abo;
 use TildBJ\Abo\Domain\Repository\AboRepository;
 use TildBJ\Abo\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
 /**
