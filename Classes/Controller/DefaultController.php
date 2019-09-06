@@ -5,6 +5,7 @@ namespace TildBJ\Abo\Controller;
 
 use TildBJ\Abo\Domain\Abo;
 use TildBJ\Abo\Domain\Repository\AboRepository;
+use TildBJ\Abo\Utility\ConfigurationUtility;
 use TildBJ\Abo\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
@@ -34,6 +35,12 @@ class DefaultController extends ActionController
     {
         $this->signalSlotDispatcher = $signalSlotDispatcher;
         $this->aboRepository = $aboRepository;
+    }
+
+    public function initializeAction()
+    {
+        $configurationUtility = $this->objectManager->get(ConfigurationUtility::class);
+        $configurationUtility->initializeSettings();
     }
 
     /**
