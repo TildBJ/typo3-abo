@@ -9,6 +9,7 @@ use TildBJ\Abo\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
+
 /**
  * Class DefaultController
  * @package TildBJ\Abo\Controller
@@ -75,6 +76,7 @@ class DefaultController extends ActionController
 
     /**
      * @param Abo $abo
+     * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("abo")
      */
     public function unsubscribeAction(Abo $abo)
     {
