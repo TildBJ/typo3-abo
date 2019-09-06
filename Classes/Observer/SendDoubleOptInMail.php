@@ -6,6 +6,7 @@ namespace TildBJ\Abo\Observer;
 use TildBJ\Abo\Domain\Abo;
 use TildBJ\Abo\Domain\Repository\AboRepository;
 use TildBJ\Abo\Service\MailService;
+use TildBJ\Abo\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MailUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
@@ -51,7 +52,12 @@ class SendDoubleOptInMail implements ObserverInterface
         $view->setTemplatePathAndFilename(self::TEMPLATE);
         $mail = $view->assign('abo', $abo)->render();
 
-        $this->mailService->send(MailUtility::getSystemFrom(), [$abo->getEmail()], 'Confirm your Abo', $mail);
+        $this->mailService->send(
+            MailUtility::getSystemFrom(),
+            [$abo->getEmail()],
+            LocalizationUtility::translate('mail.confirmation.subject'),
+            $mail
+        );
 
         return [$abo];
     }

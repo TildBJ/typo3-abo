@@ -21,6 +21,9 @@ Please confirm your registration by clicking on the link in the e-mail that has 
 			<trans-unit id="abo.email">
 				<source>Email</source>
 			</trans-unit>
+			<trans-unit id="mail.confirmation.subject">
+				<source>Confirm your Abo</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
