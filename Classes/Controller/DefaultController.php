@@ -108,6 +108,7 @@ class DefaultController extends ActionController
             $this->signalSlotDispatcher->dispatch(self::class, $signalName, [$abo]);
         } catch (\TildBJ\Abo\Exception\AlreadyConfirmedException $exception) {
             $this->addFlashMessage(LocalizationUtility::translate('flashmessage.alreadyConfirmed'), '', AbstractMessage::WARNING);
+            $this->redirect('index');
         }
     }
 
