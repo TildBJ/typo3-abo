@@ -93,7 +93,7 @@ class DefaultController extends ActionController
             $this->redirect('index');
         } else {
             $this->addFlashMessage(LocalizationUtility::translate('flashmessage.emailNotFound'), '', AbstractMessage::ERROR);
-            $this->redirect('index', ['nextAction' => 'unsubscribe']);
+            $this->redirect('index', 'Default', 'abo', ['nextAction' => 'unsubscribe']);
         }
 
     }
@@ -110,13 +110,5 @@ class DefaultController extends ActionController
             $this->addFlashMessage(LocalizationUtility::translate('flashmessage.alreadyConfirmed'), '', AbstractMessage::WARNING);
             $this->redirect('index');
         }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    protected function redirect(string $action, array $arguments = [])
-    {
-        parent::redirect($action, 'Default', 'abo', $arguments);
     }
 }
